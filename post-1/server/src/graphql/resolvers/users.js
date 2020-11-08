@@ -48,7 +48,7 @@ module.exports = {
         email,
         username,
         password,
-        createAt: new Date().toISOString(),
+        createdAt: new Date().toISOString(),
       });
       const user = await newUser.save();
       const token = generateToken(user);
